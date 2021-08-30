@@ -1,0 +1,84 @@
+<html>
+  <head lang="en">
+    <title>Teka el3almy</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/main.css"
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    	function key(){
+    	var num = document.getElementById("num").value;
+        var pass = document.getElementById("pass").value;
+        
+    	document.getElementById("cn").style.display = ("none");
+        document.getElementById("key").style.display = ("block");
+        document.getElementById("num2").value=num;
+        document.getElementById("pass2").value=pass;
+        
+        document.getElementById("gc").value=num;
+}
+    </script>
+  </head>
+  <body style="background:black;color:white;">
+    <div class="container" align="center" style="padding:0px;">
+      
+      <div id="tl">
+        <strong>t e k a e l 3 a l m y</strong>
+      </div>
+      <br><br><br><br>
+      <div id="key" style="display:none">
+      <button id="join" type="button" class="btn btn-primary" onclick="window.open('https://t.me/teka_el3almy','_self');">Don't have the key ? Click here</button>
+        <br><br>
+      <form method="POST">
+      
+      <input type="password" id="wkey" name="wkey" class="form-control" style="width:220px" placeholder="Website Key" required></input><br>
+      <input type="hidden" id="num2" name="number" class="form-control" style="width:220px" placeholder="Number" required></input>
+          <input type="hidden" id="pass2" name="password" class="form-control" style="width:220px" placeholder="Password" required></input>
+          <input type="hidden" name="opt" value="1"></input>
+          <div class="g-recaptcha" data-sitekey="6Lcg4hMcAAAAAFR_IBjgZpXX1puBqEsTz6sLj7c1"></div>
+      <br/>
+          <button type="submit" name="add"  class="btn btn-info">get</button>
+          <br><br>
+      </form>
+      
+      
+      
+      
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <div id="cn">
+        <button id="join" type="button" class="btn btn-primary" onclick="window.open('https://t.me/teka_el3almy ');">Join Telegram Channel</button>
+        <br><br>
+        <form method="POST">
+          <input type="number" id="num" name="number" class="form-control" style="width:220px" placeholder="Number" required></input>
+          <br>
+          <input type="password" id="pass" name="password" class="form-control" style="width:220px" placeholder="Password" required></input>
+          <br>
+          <input type="hidden" name="opt" value="1"></input>
+          <button type="button" onclick="key();" name="add"  class="btn btn-info">Get
+        </button>
+        </form>
+        
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
